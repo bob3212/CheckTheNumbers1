@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lineup</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/tradetool.js"></script>
+  </head>
+  <body>
+
+      <div class='userteam'>
+        <option>Your Team</option>
+        <script>createUserList();</script>
+      </div>
+
+      <br></br>
+
+      <div class='otherteam'>
+        <option>Other Team</option>
+        <select class="selector" name="teamsSelector" onchange="getTeam();"></select>
+      </div>
+
+      <br></br>
+
+      <div class='trade'>
+        <option>Trade Proposal</option>
+        <button onclick="addorremove(0)">Add Players to Trade</button>
+        <button onclick="addorremove(1)">Remove Players from Trade</button>
+      </div>
+
+      <div class='usertrade'>
+          <option>You are trading:</option>
+      </div>
+
+      <br></br>
+
+      <div class='othertrade'>
+          <option>For:</option>
+      </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lineup</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/lineup.js"></script>
+  </head>
+  <body>
+      <div class='option'>
+        <div id='dressbutton'>
+            <button onclick="benchordress(0)">Select Players to Dress</button>
+        </div>
+        <div id='benchbutton'>
+            <button onclick="benchordress(1)">Select Players to Bench</button>
+        </div>
+      </div>
+      <div class='playerList'>
+        <script>createList();</script>
+      </div>
+      <div class='dressed'>
+        <option>Dressed</option>
+      </div>
+      <div class='benched'>
+          <option>Benched</option>
+      </div>
+      <div class='submit'>
+        <button onclick="checklineup()">Select Players to Dress</button>
+      </div>
+  </body>
+</html>
